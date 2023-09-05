@@ -4,9 +4,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+@*<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />*@
 
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <!-- Projects Section-->
         <section class="py-5">
@@ -21,24 +21,26 @@
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 1</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <a class=" text-right" href="https://github.com/Andresito98/Proyecto_Intensivo_back_NET_OB/tree/master/backend"><img class="bi bi-github" src="/css/7.png" /> </a>
+                                        <h2 class="fw-bolder">Proyecto Intensivo Backend </h2>
+                                        <p> Proyecto full backend donde su uso principal es con el Entity Framework y con seguridad JWT Encriptada usando Swagger y PostMan </p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
                                 </div>
                             </div>
+                            <img class="img-fluid" src="~/css/ApiBackendFull.png" />
                         </div>
                         <!-- Project Card 2-->
                         <div class="card overflow-hidden shadow rounded-4 border-0">
                             <div class="card-body p-0">
                                 <div class="d-flex align-items-center">
                                     <div class="p-5">
-                                        <h2 class="fw-bolder">Project Name 2</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                        <a class=" text-right" href="https://github.com/Andresito98/API_PROJECT_FP_DAM"><img class="bi bi-github" src="/css/7.png" /> </a>
+                                        <h2 class="fw-bolder"> Full Api Rest</h2> 
+                                        <p> Proyecto del Grado de Desarrollo de Aplicaciones Multiplataformas con conocimientos solidos en Java y BBDD PostgreSQL</p>
                                     </div>
-                                    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
                                 </div>
                             </div>
+                            <img class="img-fluid" src="~/css/ProyectoFPDam.png" />
                         </div>
                     </div>
                 </div>
@@ -48,8 +50,8 @@
         <section class="py-5 bg-gradient-primary-to-secondary text-white">
             <div class="container px-5 my-5">
                 <div class="text-center">
-                    <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                    <h2 class="display-4 fw-bolder mb-4">Construyamos algo juntos!!</h2>
+                    <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" asp-controller="Home" asp-action="Contact">Contacto</a>
                 </div>
             </div>
         </section>

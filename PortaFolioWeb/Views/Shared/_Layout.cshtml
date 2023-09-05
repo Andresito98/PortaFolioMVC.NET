@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PortaFolioWeb</title>
-    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/js/bootstrap.js" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PortaFolioWeb.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <header>
@@ -30,6 +30,9 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contacto</a>
                         </li>
                     </ul>
+                    <button onclick="changeTheme" id="bdark">
+                        <img id="sun" class="bi bi-twitter" src="/css/html.png" />
+                    </button>
                 </div>
             </div>
         </nav>
@@ -37,7 +40,7 @@
     <div class="container2">
         @RenderBody()
         <div class="container">
-            <main role="main" class="pb-3">
+            <main role="main" class="">
                 @RenderBody()
             </main>
          </div>
@@ -59,7 +62,9 @@
 
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/bootstrap.js" asp-append-version="true"></script>
+    @*<script src="~/js/bootstrap.js" asp-append-version="true"></script>*@
+    <script src="~/js/ButtonDark.js" ></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

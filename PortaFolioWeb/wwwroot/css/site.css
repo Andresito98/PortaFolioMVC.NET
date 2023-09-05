@@ -99,7 +99,8 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    /*background-color: var(--bs-body-bg);*/
+    background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -13562,3 +13563,20 @@ html {
             left: -2vw;
         }
 }
+
+/*/ Modo oscuro */
+body.darkmode {
+    background-color: rgb(32,32,44);
+    /*color: white;*/
+}
+
+.text-right {
+    float: right;
+    background: black;
+    border-radius: 30px;
+}
+
+.aboutme {
+    background-image: linear-gradient(rgb(32,32,44) 30%, white 180%);
+}
+
